@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERNAME=${1:-arruda}
+USERNAME=${1:-codespace}
 SECURE_PATH_BASE=${2:-$PATH}
 
 echo "Defaults secure_path=\"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin:${SECURE_PATH_BASE}\"" >> /etc/sudoers.d/securepath
