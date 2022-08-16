@@ -23,6 +23,7 @@ sudo -u ${USERNAME} mkdir -p /home/${USERNAME}/.local/bin
 cat << 'EOF' > /usr/local/etc/vscode-dev-containers/conda-notice.txt
 When using "conda" from outside of GitHub Codespaces, note the Anaconda repository contains
 restrictions on commercial use that may impact certain organizations. See https://aka.ms/ghcs-conda
+
 EOF
 
 notice_script="$(cat << 'EOF'
