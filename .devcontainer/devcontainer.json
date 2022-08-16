@@ -4,6 +4,17 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
+    "features": {
+        "github-cli": "2",
+        "azure-cli": "2.38",
+        "python": "os-provided",
+        "dotnet": "6.0",
+        "docker-from-docker": "20.10",
+        "node": {
+            "version": "16",
+            "nodeGypDependencies": false
+        }
+    },	
 
 	// Configure tool-specific properties.
 	"customizations": {
