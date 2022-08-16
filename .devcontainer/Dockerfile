@@ -1,5 +1,4 @@
-ARG VARIANT=bullseye
-FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
+FROM mcr.microsoft.com/vscode/devcontainers/universal:2-linux
 RUN curl -fsSL https://aka.ms/install-azd.sh | bash \
     && curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg \
     && mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg \
